@@ -1,0 +1,144 @@
+// form
+.counter-form {
+    display: flex;
+    flex-direction: column;
+    margin-block-start: 4rem;
+    gap: 1rem;
+}
+
+#userText  {
+    height: 15rem;
+    font-family: inherit;
+    border-radius: 1rem;
+    padding: 2rem;
+    border: none;
+    box-shadow: .4rem .4rem 1rem rgba(0, 0, 0, 0.138);
+    margin-block-end: 1rem;
+
+    &:focus-visible {
+        outline-color: orange;
+    }
+}
+
+body.dark #userText,
+body.dark .modal,
+body.dark input {
+    background-color: #e3e3e3;
+}
+
+.form-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 1rem;
+    font-size: .85rem;
+    padding-inline: .75rem;
+}
+
+.checkboxes {
+
+    label {
+        margin-inline-end: .75rem;
+    }
+
+    input {
+        accent-color: orange;
+    }
+}
+
+.approx-time {
+    margin-block: auto;
+    color: orange;
+    font-weight: 600;
+}
+
+.limit-warning {
+    display: block;
+    color: hotpink;
+    text-align: center;
+    font-size: .75rem;
+    margin-block: 0;
+    font-weight: 500;
+}
+
+.backdrop {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.075);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.modal {
+    z-index: 10;
+    position: fixed;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    box-shadow: .4rem .4rem 1rem rgba(0, 0, 0, 0.075);
+    color: rgb(38, 36, 36);
+    font-size: .9rem;
+
+    .close-btn {
+        align-self: flex-end;
+        width: 2rem;
+        aspect-ratio: 1;
+        background-image: url(/assets/close.svg);
+        background-repeat: no-repeat;
+        background-size: 1.5rem;
+        background-position: center;
+        border: none;
+        background-color: transparent;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: .75rem;
+        align-items: center;
+    }
+
+    label {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    input {
+        padding: .75rem;
+        border-radius: 1rem;
+        border: .01rem solid;
+        font-size: 1rem;
+        color: hotpink;
+        &:focus-visible {
+            outline-color: orange;
+        }
+    }
+
+    .char-limit-submit-btn {
+        margin-block: 2rem 1rem;
+        border: none;background-color: orange;
+        padding: .5rem 2.8rem;
+        border-radius: 1rem;
+        // color: #fcfbfa;
+        // font-weight: 600;
+        font-size: 1rem;
+        letter-spacing: .1rem;
+        
+
+    }
+}

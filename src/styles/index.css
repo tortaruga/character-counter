@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.count-results {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-block: 4rem;
+}
+.count-results div {
+  border-radius: 1rem;
+  padding: 0.75rem;
+  width: 33.3333333333%;
+  flex-grow: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: rgb(57, 52, 52);
+  font-weight: 600;
+}
+
+.characters {
+  background-image: url(/assets/gradient-1.svg);
+}
+
+.words {
+  background-image: url(/assets/gradient-2.svg);
+}
+
+.sentences {
+  background-image: url(/assets/gradient-3.svg);
+}
+
+.result-tag {
+  font-size: 1.1rem;
+}
+
+.result {
+  font-size: 2rem;
+}
+
+.letter-density-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.bar {
+  height: 0.5rem;
+  width: 100%;
+  background-color: rgba(114, 114, 114, 0.314);
+  border-radius: 1rem;
+}
+
+.progress {
+  height: 100%;
+  background-color: hotpink;
+  border-radius: inherit;
+}
+
+.percentage {
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+.show-more {
+  border: none;
+  background-color: transparent;
+  padding-block-end: 0.075rem;
+  padding-inline: 0;
+  border-bottom: 0.01rem solid;
+  margin-block-start: 1rem;
+  color: inherit;
+}
+
+.counter-form {
+  display: flex;
+  flex-direction: column;
+  margin-block-start: 4rem;
+  gap: 1rem;
+}
+
+#userText {
+  height: 15rem;
+  font-family: inherit;
+  border-radius: 1rem;
+  padding: 2rem;
+  border: none;
+  box-shadow: 0.4rem 0.4rem 1rem rgba(0, 0, 0, 0.138);
+  margin-block-end: 1rem;
+}
+#userText:focus-visible {
+  outline-color: orange;
+}
+
+body.dark #userText,
+body.dark .modal,
+body.dark input {
+  background-color: #e3e3e3;
+}
+
+.form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 1rem;
+  font-size: 0.85rem;
+  padding-inline: 0.75rem;
+}
+
+.checkboxes label {
+  margin-inline-end: 0.75rem;
+}
+.checkboxes input {
+  accent-color: orange;
+}
+
+.approx-time {
+  margin-block: auto;
+  color: orange;
+  font-weight: 600;
+}
+
+.limit-warning {
+  display: block;
+  color: hotpink;
+  text-align: center;
+  font-size: 0.75rem;
+  margin-block: 0;
+  font-weight: 500;
+}
+
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.075);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.modal {
+  z-index: 10;
+  position: fixed;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  box-shadow: 0.4rem 0.4rem 1rem rgba(0, 0, 0, 0.075);
+  color: rgb(38, 36, 36);
+  font-size: 0.9rem;
+}
+.modal .close-btn {
+  align-self: flex-end;
+  width: 2rem;
+  aspect-ratio: 1;
+  background-image: url(/assets/close.svg);
+  background-repeat: no-repeat;
+  background-size: 1.5rem;
+  background-position: center;
+  border: none;
+  background-color: transparent;
+}
+.modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+}
+.modal label {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.modal input {
+  padding: 0.75rem;
+  border-radius: 1rem;
+  border: 0.01rem solid;
+  font-size: 1rem;
+  color: hotpink;
+}
+.modal input:focus-visible {
+  outline-color: orange;
+}
+.modal .char-limit-submit-btn {
+  margin-block: 2rem 1rem;
+  border: none;
+  background-color: orange;
+  padding: 0.5rem 2.8rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 1rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: rgb(252, 251, 250);
+  color: rgb(57, 52, 52);
+  font-family: "poppins", sans-serif;
+}
+
+body.dark {
+  background-color: #262424;
+  color: #fcfbfa;
+}
+
+label, button, input[type=checkbox] {
+  cursor: pointer;
+}
+
+main {
+  max-width: 55rem;
+  margin: auto;
+}
+
+.mode-btn {
+  width: 2rem;
+  aspect-ratio: 1;
+  background-size: 1.7rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(/assets/dark-mode.svg);
+  border: none;
+  background-color: transparent;
+}
+
+body.dark .mode-btn {
+  background-image: url(/assets/light-mode.svg);
+}
+
+.main-h1,
+.intro {
+  text-align: center;
+}
+
+.main-h1 {
+  font-size: 3.5rem;
+  margin-block-end: 0;
+}
+.main-h1 span {
+  color: orange;
+}
+
+.intro {
+  color: #ff69b4;
+}
+
+footer {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-block-start: 4rem;
+}
+footer a {
+  color: #ff69b4;
+}
+footer a:hover {
+  color: orange;
+}/*# sourceMappingURL=index.css.map */

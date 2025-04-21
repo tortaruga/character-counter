@@ -1,0 +1,77 @@
+// results
+
+.count-results {
+    display: flex;
+    justify-content: space-between;
+    gap: .75rem;
+    flex-wrap: wrap;
+    margin-block: 4rem;
+
+    div {
+        border-radius: 1rem;
+        padding: .75rem;
+        width: calc(100% / 3);
+        flex-grow: 1;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        color: rgb(57, 52, 52);
+        font-weight: 600;
+    }
+}
+
+.characters {
+    background-image: url(/assets/gradient-1.svg);
+}
+
+.words {
+    background-image: url(/assets/gradient-2.svg);
+}
+
+.sentences {
+    background-image: url(/assets/gradient-3.svg);
+}
+
+.result-tag {
+    font-size: 1.1rem;
+}
+
+.result {
+    font-size: 2rem;
+}
+
+.letter-density-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: .9rem;
+}
+
+.bar {
+    height: .5rem;
+    width: 100%;
+    background-color: rgba(114, 114, 114, 0.314);
+    border-radius: 1rem; 
+}
+
+.progress {
+    height: 100%;
+    background-color: hotpink;
+    border-radius: inherit;
+}
+
+.percentage {
+    text-align: center;
+    font-size: .7rem;
+}
+
+.show-more {
+    border: none;
+    background-color: transparent;
+    padding-block-end: .075rem;
+    padding-inline: 0;
+    border-bottom: .01rem solid;
+    margin-block-start: 1rem;
+    color: inherit;
+}
