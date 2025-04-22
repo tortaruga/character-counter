@@ -3,7 +3,7 @@ import { calculateLetterDensity, countCharacters, countSentences, countWords, es
 import CharLimitModal from "./CharLimitModal.jsx";
 
 export default function CounterForm({setTextAnalysis, textAnalysis}) {
-    const [maxLength, setMaxLength] = useState('');
+    const [maxLength, setMaxLength] = useState(null);
     const [isCharLimitModalOpen, setIsCharLimitModalOpen] = useState(false);
 
     const [formData, setFormData] = useState({

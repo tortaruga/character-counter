@@ -8,7 +8,7 @@ function App() {
 
     useEffect(() => {
       document.querySelector('body').classList.toggle('dark');
-    }, [darkMode]);
+    }, [darkMode]); 
 
     const [textAnalysis, setTextAnalysis] = useState({
         total_characters: 0,
